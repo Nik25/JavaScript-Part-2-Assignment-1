@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Array- Min and Max number</title>
+    
+</head>
+<body>
+
+    <h2> Session 6 -Assignment 1 , Problem Statement: Find the Min and Max number</h2>
+
+    <!----<p>The highest number is <span id = "max number"></span></p> -->
+
+    <script>
+
+         Array.prototype.max = function () {
+            return Math.max.apply(Math, this);
+        };
+
+        Array.prototype.min = function () {
+            return Math.min.apply(Math, this);
+        };
+        var max = [10, 12, 18, 24, 15].max();
+        var min = [10, 12, 18, 24, 15].min();
+        document.write ("The max number is " + max  +   " and the min number is  " + min +"."); 
+
+               
+         </script>
+</body>
+</html>
